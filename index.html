@@ -9,6 +9,11 @@
         .bg-dc{
             background-color: #DCDCDC;
         }
+        #leftimg{
+            background-image: url('./image/image.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 <body>
@@ -16,17 +21,16 @@
     <div class="container">
         <h1 class="text-info text-center p-5 pb-3 pt-3 fw-bolder display-5">Money Master 💰</h1>
         <div class="row g-0 p-2">
-            <div class="col-6">
-                <img class="img-fluid" src="./image/image.png" alt="">
+            <div class="col-6" id="leftimg">
             </div>
             <div class="col-6 bg-light">
-                <h3 class="text-success text-center pt-3">Income</h3>
+                <h5 class="text-success text-center pt-3">Income</h5>
                 <div class="mb-3 mx-5">
                     <label for="income" class="form-label">Income</label>
                     <input type="text" class="form-control bg-dc" id="income">
                 </div>
 
-                <h3 class="text-danger text-center pt-2">Expence</h3>
+                <h5 class="text-danger text-center pt-2">Expence</h5>
                 <div class="mb-3 mx-5">
                     <label for="fode" class="form-label">Fode</label>
                     <input type="text" class="form-control bg-dc" id="fode">
@@ -38,16 +42,16 @@
                 <div class="d-flex justify-content-center items-align-center">
                     <button title="claculate-btn" class="btn btn-md px-4 btn-primary">Calculate</button>
                 </div>
-                <h3 class="text-danger text-center pt-3">Total Expence: $<span id="totoal-expence">0</span></h3>
-                <h3 class="text-info text-center pt-3">Balance: $<span id="balance">0</span></h3>
+                <h5 class="text-danger text-center pt-3">Total Expence: $<span id="totoal-expence">0</span></h5>
+                <h5 class="text-info text-center pt-3">Balance: $<span id="balance">0</span></h5>
                 <div class="d-flex px-5 justify-content-center">
                     <p class="px-2 pt-2">Save:</p>
                     <input title="save" type ="text" class="form-control w-25 bg-dc">
                     <p class="px-2 pt-2">%</p>
                     <button title="save-btn" class="btn btn-primary px-4">Save</button>
                 </div>
-                <h3 class="text-success text-center pt-3">Saving Ammount: $<span id="saving-ammount">0</span></h3>
-                <h3 class="text-info text-center pt-3">Remaining Balance: $<span id="remaining-balance">0</span></h3>
+                <h5 class="text-success text-center pt-3">Saving Ammount: $<span id="saving-ammount">0</span></h5>
+                <h5 class="text-info text-center pt-3">Remaining Balance: $<span id="remaining-balance">0</span></h5>
             </div>
         </div>
     </div>
